@@ -47,3 +47,13 @@ if (APPLE)
         "-framework Carbon"
     )
 endif()
+
+
+if (WIN32)
+    target_link_libraries(
+        hello_window
+        glfw3.lib
+        glew32s.lib
+        opengl32.lib
+)
+endif()
